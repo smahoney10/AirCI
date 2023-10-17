@@ -1,4 +1,4 @@
-//Slices
+//Codesystems
 CodeSystem:  AirportCodesCS
 Id: airport-code-system
 Title: "Airport Codes"
@@ -15,6 +15,7 @@ Description:  "A list of Quarantine Stations."
 * #LAX "Los Angeles, CA"
 * #MIA "Miami, FL"
 
+//valuesets
 ValueSet: AirportCodeVS
 Title: "Airport Codes VS"
 Description:  "A list of USA Airport Codes."

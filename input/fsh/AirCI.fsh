@@ -14,7 +14,7 @@ Description: "Flight info for an ill traveler"
 * value[x] = http://snomed.info/sct#261325004 "Airliner"  //Airplane travel
 * status = #preliminary
 
-Profile: CaseReport
+Profile: ReportOfIllTraveler
 Parent: Composition
 Description: "Case Report of an ill traveler"
 * subject 1..1
@@ -23,7 +23,25 @@ Description: "Case Report of an ill traveler"
     Qstation named qstation-name 0..1 MS
 * extension[qstation-transfer-date] ^short = "Date transferred to Q-Station"
 * extension[qstation-name] ^short = "Date transferred to Q-Station"
-
+* section 0..0
+* title = "Report of Ill Traveler"
+* encounter 0..0
+* confidentiality 0..0
+* attester 0..0
+* author ^short = "Contact info for the case report"
+* author only Reference(RelatedPerson or Organization)
+* author  ^slicing.discriminator.type = #value
+* author  ^slicing.discriminator.path = "code"
+* author  ^slicing.rules = #open
+* author  ^slicing.description = ""
+* author  ^slicing.ordered = false
+* author  contains
+  stateContact 0..* and
+  localContact 0..* and
+  diseaseContact 0..* 
+* author[stateContact] only Reference(RelatedPerson or Organization)
+* author[localContact] only Reference(RelatedPerson or Organization)
+* author[diseaseContact] only Reference(RelatedPerson or Organization)
 
 Profile: FlightItinerary2
 Parent: $eCRTransportation
