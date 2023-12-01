@@ -3,7 +3,7 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: cdc.illTraveler
+id: hl7.fhir.us.illTraveler
 canonical: http://example.org
 name: CDC DGMQ Report of Ill Traveler
 title: CDC DGMQ Report of Ill Traveler
@@ -16,9 +16,9 @@ releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | re
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
-  name: Example Publisher
-  url: http://example.org/example-publisher
-  # email: test@example.org
+  name: HL7 Public Health Working Group
+  url: http://www.hl7.org/Special/committees/pher
+  email: pafm@lists.HL7.org
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
@@ -65,6 +65,8 @@ dependencies:
 # For parameters defined by the FHIR Tools IG see:
 # http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
 #
+parameters:
+  path-binary: input/attachments
 # parameters:
 #   excludettl: true
 #   validation: [allow-any-extensions, no-broken-links]
@@ -80,9 +82,23 @@ dependencies:
 menu:
   Home: index.html
   Artifacts: artifacts.html
-  Implementation Guidance: 
-    AirCI Process: airCIprocess.html
-
+  Implementation Guidance:  
+    Terminology: terminology.html
+    Security: security.html
+    Conformance: conformance.html
+  CDC Interoperability:
+    CDC Front Door: frontDoor.html
+    Air Contact Investigation CONOPS: conops.html
+    CSTE: cste.html
+  Use Case:
+    Report of Ill Traveler: illTraveler.html
+    Air Contact Investigations: airCIprocess.html
+    Public Health Case Reporting: case.html
+  Examples:
+    Single leg air travel: singlelegtravel.html
+    Multiple leg air travel: multilegtravel.html
+    Tuberculosis: tuberculosis.html
+    Measles: measles.html
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
 # │  resource. These properties are less commonly needed than those above.                         │
