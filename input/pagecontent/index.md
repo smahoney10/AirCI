@@ -1,12 +1,12 @@
 # Background
 
-DGMQ plays a key role in limiting the introduction, transmission, and spread of infectious diseases in the United States – and conducting air contact investigations, or Air Cis, is a key part of that work. 
+DGMH plays a key role in limiting the introduction, transmission, and spread of infectious diseases in the United States – and conducting air contact investigations, or Air CIs, is a key part of that work. 
 
-Exchanging traveler-related data between DGMQ and jurisdictional health departments, abbreviated as HDs in this IG, is critical to conducting Air CIs that result in meaningful public health outcomes.
+Exchanging traveler-related data between DGMH and jurisdictional health departments, abbreviated as HDs in this IG, is critical to conducting Air CIs that result in meaningful public health outcomes.
 
-The COVID-19 pandemic demonstrated that current ways of sharing information are not scalable, specifically related to Air Cis. 
+The COVID-19 pandemic demonstrated that current ways of sharing information are not scalable, specifically related to Air CIs. 
 
-As such, DGMQ and MITRE and MITRE are working together to explore the current state of data exchange, with specific focus on Air CI data, and develop recommendations for future improvements. 
+As such, DGMH and MITRE are working together to explore the current state of data exchange, with specific focus on Air CI data, and develop recommendations for future improvements. 
 
 # Introduction and Purpose
 
@@ -27,12 +27,27 @@ Primary Authors
 
 Federal Contributors
 
-- *Abbey Wojino, CDC*
-- *Ardeth Grills, CDC*
+- *Abbey Wojno, CDC*
+- *Ardath Grills, CDC*
 - *Kristin Delea, CDC*
+- *Shannon Gearhart, CDC*
+- *Stephanie Morrison, CDC*
+- *Jennifer Fowler, CDC*
+- *Alida Gertz, CDC*
+- *Sundari Mase, CDC*
 
 State and Territorial Contributors
 
 - *Haley Biddle, Colorado*
 - *Tye Harlow, Colorado*
-- *TODO finish names*
+- *Emily Ladtkow, Colorado*
+- *Kevin Andresen, Colorado*
+- *Susan McElhany, Nevada*
+- *Bruno Bevilacqua, Nevada*
+- *Denise Stokich, Nevada*
+- *Judy DuMonte, Nevada*
+- *Krystal Pinkston, Nevada*
+- *Andrea P. Pachecho Soto, Puerto Rico*
+- *Christian Santiago Rosas, Puerto Rico*
+- *Abdiel Hernandez Soto, Puerto Rico*
+
