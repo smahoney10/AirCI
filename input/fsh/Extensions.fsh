@@ -45,7 +45,9 @@ It does not cover each leg of an itinerary. Each leg requires a flightDetail "
     arrivalAirport 0..1 and
     flightNumber 0..1 and
     seatNumber 0..1 and
-    flightDuration 0..1
+    flightDuration 0..1 and
+    satInSeat 0..1 and
+    airline 0..1
 * extension[departureAirport].value[x] only CodeableConcept
 * extension[departureAirport] ^short = "Departure Airport"
 * extension[departureAirport].value[x] 1..1
