@@ -6,6 +6,7 @@ Description: "An example of a report of an ill traveler."
 * subject = Reference(travelerExample)
 * date = "2023-12-03T19:43:30.000Z"
 * section[infectiousDisease].entry = Reference(TuberculosisExample)
+* section[flightItinerary].entry = Reference(FlightExample)
 
 Instance: StateExample
 InstanceOf: Organization
@@ -47,12 +48,30 @@ Description: "An example of a flight itinerary."
 * component[flight/arrivalAirport].valueString = "LAX"
 * component[flight/arrivalAirport].code = #LAX
 */
-Instance: FlightExample
+Instance: SingleLegFlightExample
 InstanceOf: FlightItinerary
-Description: "An example of a flight itinerary."
-/** extension[flight-duration].valuestring = "3 hours"
-* extension[flight-detail/departureAirport].valueString = "DCA"
-* extension[flight-detail].departureAirport.code = #DCA
+Description: "An example of a flight itinerary with only one flight."
+* extension[flight-detail].extension[departureAirport].valueCodeableConcept = #DCA "Washington DC"
+* extension[flight-detail].extension[arrivalAirport].valueCodeableConcept = #LAX "Los Angeles"
+* extension[flight-detail].extension[flightNumber].valueString = "DL364"
+* extension[flight-detail].extension[seatNumber].valueString = "17B"
+* extension[flight-detail].extension[flightDuration].valueString = "5 hours"
+* extension[flight-detail].extension[airline].valueString = "United"
+
+Instance: MultipleLegFlightExample
+InstanceOf: FlightItinerary
+Description: "An example of a flight itinerary with multiple flights."
+* extension[flight-detail].extension[departureAirport].valueCodeableConcept[0] = #DCA "Washington DC"
+* extension[flight-detail].extension[arrivalAirport].valueCodeableConcept[0] = #LAX "Los Angeles"
+* extension[flight-detail].extension[flightNumber].valueString[0] = "DL364"
+* extension[flight-detail].extension[seatNumber].valueString[0] = "17B"
+* extension[flight-detail].extension[flightDuration].valueString[0] = "5 hours"
+/*
+* extension[flight-detail].extension[departureAirport][+].valueCodeableConcept = #DCA "Washington DC"
+* extension[flight-detail].extension[arrivalAirport].valueCodeableConcept[+] = #LAX "Los Angeles"
+* extension[flight-detail].extension[flightNumber].valueString[+] = "DL364"
+* extension[flight-detail].extension[seatNumber].valueString[+] = "17B"
+* extension[flight-detail].extension[flightDuration].valueString[+] = "5 hours"
 */
 
 Instance: TuberculosisExample

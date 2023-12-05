@@ -22,7 +22,7 @@ Description: "Report of an ill traveler"
 * contained 0..0
 * encounter 0..0
 * confidentiality 0..0
-* type = #55751-2
+* type = #55751-2 "Public health Case report"
 * relatesTo 0..1
 * event 0..1
 * section 0..1
