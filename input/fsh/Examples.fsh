@@ -56,6 +56,7 @@ Description: "An example of a flight itinerary with only one flight."
 * extension[flight-detail].extension[flightNumber].valueString = "DL364"
 * extension[flight-detail].extension[seatNumber].valueString = "17B"
 * extension[flight-detail].extension[flightDuration].valueString = "5 hours"
+* extension[flight-detail].extension[airline].valueString = "United"
 
 Instance: MultipleLegFlightExample
 InstanceOf: FlightItinerary

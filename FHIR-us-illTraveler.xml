@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="" defaultVersion="current" defaultWorkgroup="pher" url="http://example.org">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="" defaultVersion="current" defaultWorkgroup="pher" url="http://hl7.org/fhir/us/reportofilltraveler">
 <version code="current" url=""/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
@@ -9,7 +9,6 @@
 <artifact id="StructureDefinition/chest-xray" key="StructureDefinition-chest-xray" name="Chest X-ray"/>
 <artifact id="DiagnosticReport/ChestXrayResultsExample" key="DiagnosticReport-ChestXrayResultsExample" name="ChestXrayResultsExample"/>
 <artifact id="StructureDefinition/flight-details" key="StructureDefinition-flight-details" name="Flight Details"/>
-<artifact id="Observation/FlightExample" key="Observation-FlightExample" name="FlightExample"/>
 <artifact id="StructureDefinition/FlightItinerary" key="StructureDefinition-FlightItinerary" name="FlightItinerary"/>
 <artifact id="StructureDefinition/transfer-date" key="StructureDefinition-transfer-date" name="Ill traveler transfer date"/>
 <artifact id="CodeSystem/infectious-disease-system" key="CodeSystem-infectious-disease-system" name="Infectious Disease"/>
@@ -17,6 +16,7 @@
 <artifact id="ValueSet/InfectiousDiseaseVS" key="ValueSet-InfectiousDiseaseVS" name="Infectious Disease VS"/>
 <artifact id="StructureDefinition/InfectiousDisease" key="StructureDefinition-InfectiousDisease" name="InfectiousDisease"/>
 <artifact id="StructureDefinition/lab-results" key="StructureDefinition-lab-results" name="Lab Results"/>
+<artifact id="Observation/MultipleLegFlightExample" key="Observation-MultipleLegFlightExample" name="MultipleLegFlightExample"/>
 <artifact id="StructureDefinition/disease-name" key="StructureDefinition-disease-name" name="Name of Disease"/>
 <artifact id="StructureDefinition/qstation-name" key="StructureDefinition-qstation-name" name="Q-station Name"/>
 <artifact id="CodeSystem/quarantine-station-system" key="CodeSystem-quarantine-station-system" name="Quarantine Stations"/>
@@ -24,6 +24,7 @@
 <artifact id="StructureDefinition/rash-onset" key="StructureDefinition-rash-onset" name="Rash Onset Date"/>
 <artifact id="Composition/ReportOfIllTravelerExample" key="Composition-ReportOfIllTravelerExample" name="Report of Ill Traveler"/>
 <artifact id="StructureDefinition/ReportOfIllTraveler" key="StructureDefinition-ReportOfIllTraveler" name="ReportOfIllTraveler"/>
+<artifact id="Observation/SingleLegFlightExample" key="Observation-SingleLegFlightExample" name="SingleLegFlightExample"/>
 <artifact id="Organization/StateExample" key="Organization-StateExample" name="StateExample"/>
 <artifact id="StructureDefinition/Traveler" key="StructureDefinition-Traveler" name="Traveler"/>
 <artifact id="ValueSet/TuberculosisVS" key="ValueSet-TuberculosisVS" name="Tuberculosis VS"/>

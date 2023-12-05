@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.us.illTraveler
-canonical: http://example.org
+canonical: http://hl7.org/fhir/us/reportofilltraveler
 name: CDC DGMQ Report of Ill Traveler
 title: CDC DGMQ Report of Ill Traveler
 description:  Implementation Guide CDC DGMQ Report of Ill Traveler

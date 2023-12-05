@@ -65,6 +65,12 @@ It does not cover each leg of an itinerary. Each leg requires a flightDetail "
 * extension[flightDuration].value[x] only string
 * extension[flightDuration].value[x] 1..1
 * extension[flightDuration] ^short = "Flight Duration in Hours"
+* extension[satInSeat].value[x] only boolean
+* extension[satInSeat].value[x] 1..1
+* extension[satInSeat] ^short = "Did they sit in their assigned seat?"
+* extension[airline].value[x] only string //Should we make this a valueset?
+* extension[airline].value[x] 1..1
+* extension[airline] ^short = "The airline they flew on"
 
 
 Extension: LabResults
