@@ -11,6 +11,7 @@
 <artifact id="StructureDefinition/flight-details" key="StructureDefinition-flight-details" name="Flight Details"/>
 <artifact id="StructureDefinition/FlightItinerary" key="StructureDefinition-FlightItinerary" name="FlightItinerary"/>
 <artifact id="StructureDefinition/transfer-date" key="StructureDefinition-transfer-date" name="Ill traveler transfer date"/>
+<artifact id="StructureDefinition/IllTravelerBundle" key="StructureDefinition-IllTravelerBundle" name="IllTravelerBundle"/>
 <artifact id="CodeSystem/infectious-disease-system" key="CodeSystem-infectious-disease-system" name="Infectious Disease"/>
 <artifact id="ValueSet/InfectiousDiseaseNameVS" key="ValueSet-InfectiousDiseaseNameVS" name="Infectious Disease VS"/>
 <artifact id="ValueSet/InfectiousDiseaseVS" key="ValueSet-InfectiousDiseaseVS" name="Infectious Disease VS"/>
