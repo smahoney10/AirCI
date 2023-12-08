@@ -45,7 +45,9 @@ It does not cover each leg of an itinerary. Each leg requires a flightDetail "
     arrivalAirport 0..1 and
     flightNumber 0..1 and
     seatNumber 0..1 and
-    flightDuration 0..1
+    flightDuration 0..1 and
+    satInSeat 0..1 and
+    airline 0..1
 * extension[departureAirport].value[x] only CodeableConcept
 * extension[departureAirport] ^short = "Departure Airport"
 * extension[departureAirport].value[x] 1..1
@@ -63,6 +65,12 @@ It does not cover each leg of an itinerary. Each leg requires a flightDetail "
 * extension[flightDuration].value[x] only string
 * extension[flightDuration].value[x] 1..1
 * extension[flightDuration] ^short = "Flight Duration in Hours"
+* extension[satInSeat].value[x] only boolean
+* extension[satInSeat].value[x] 1..1
+* extension[satInSeat] ^short = "Did they sit in their assigned seat?"
+* extension[airline].value[x] only string //Should we make this a valueset?
+* extension[airline].value[x] 1..1
+* extension[airline] ^short = "The airline they flew on"
 
 
 Extension: LabResults

@@ -7,6 +7,35 @@ Parent: $USCorePatient
 Description: "An profile of a Traveler."
 * name 1..* MS
 
+Profile: IllTravelerBundle
+Parent: Bundle  
+Description: "A bundle of resources related to a report of an ill traveler."
+* type = #transaction
+* entry ^slicing.discriminator.type = #profile
+* entry ^slicing.discriminator.path = "resource"
+* entry ^slicing.rules = #closed
+* entry ^slicing.description = "Slicing based on the profile conformance of the entry"
+* entry and entry.resource MS
+* entry contains 
+    Labs 0..* and
+    TravelerInfo 1..1 and
+    FlightInfo 0..* and
+    DiseaseInfo 0..1
+* entry[Labs].resource only $USCoreObservationLab
+* entry[Labs] ^short = "the labs"
+* entry[Labs] ^definition = "The labs supporting the diagnosis of the disease."
+* entry[TravelerInfo].resource only Traveler
+* entry[TravelerInfo] ^short = "Traveler Info"
+* entry[TravelerInfo] ^definition = "Information about the travler who is sick"
+* entry[TravelerInfo].resource 1..1
+* entry[TravelerInfo].request 1..1
+* entry[FlightInfo].resource only FlightItinerary
+* entry[FlightInfo] ^short = "the documents"
+* entry[FlightInfo] ^definition = "the documents referenced by the DocumentReference resources"
+* entry[DiseaseInfo].resource only InfectiousDisease
+* entry[DiseaseInfo] ^short = "Disease"
+* entry[DiseaseInfo] ^definition = "the Disease"
+* entry[DiseaseInfo].resource 0..1
 
 Profile: ReportOfIllTraveler
 Parent: Composition
@@ -22,7 +51,7 @@ Description: "Report of an ill traveler"
 * contained 0..0
 * encounter 0..0
 * confidentiality 0..0
-* type = #55751-2
+* type = #55751-2 "Public health Case report"
 * relatesTo 0..1
 * event 0..1
 * section 0..1
