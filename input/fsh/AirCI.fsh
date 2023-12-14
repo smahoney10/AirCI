@@ -2,10 +2,17 @@
 // This file can be renamed, and additional FSH files can be added.
 // SUSHI will look for definitions in any file using the .fsh ending.
 
+/*
+Profile: STLTReporter 
+Parent: Composition
+Description: "The STLT Author of this report of ill traveler"
+*/
+
 Profile: Traveler
 Parent: $USCorePatient
 Description: "An example profile of the Patient resource."
 * name 1..* MS
+* active 0..0 //removed active not neederd for use case. JI
 
 Profile: FlightItinerary1
 Parent: $eCRTransportation
